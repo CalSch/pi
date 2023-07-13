@@ -7,10 +7,10 @@ and finding the length from each point to the
 one behind it. The total length should be close to pi.
 */
 function circleCurve(x) {
-	return Math.sqrt(1-(x**2))
+	return Math.sqrt(1-(x**2));
 }
 function dist(x1,y1,x2,y2) {
-	return Math.sqrt( (x2-x1)**2 + (y2-y1)**2 )
+	return Math.sqrt( (x2-x1)**2 + (y2-y1)**2 );
 }
 
 /**
@@ -24,7 +24,7 @@ function calcPi(verts) {
 	for (let i=0;i<verts;i++) {
 		let x=-1+(i*2)/(verts-1)
 		let y=circleCurve(x);
-		points.push([x,y])
+		points.push([x,y]);
 	}
 	for (let p of points) {
 		if (lastPoint===null) {
