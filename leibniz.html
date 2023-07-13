@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculating pi in 6 different ways">
+    <title>Calculating Pi | Leibniz series</title>
+    <link rel="stylesheet" href="public/style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Calculating Pi</a></h1>
+    </header>
+
+    <main>
+        <noscript>
+            <div style="margin: 10px; border: 1px solid red; border-radius: 5px; background-color: rgba(255,0,0,0.1); padding: 10px">
+                <h1>Warning!</h1>
+                <p>This website doesn't work without JavaScript!</p>
+            </div>
+        </noscript>
+
+        <h1>Leibniz series</h1>
+
+        <hr>
+
+        <label for="arg">Depth: </label>
+        <input type="number" min="0" step="1" value="10" name="arg" id="arg">
+
+        <br style="margin-bottom: 0.5em">
+
+        <button onclick="run()">Calculate</button>
+        
+        <pre class="log">Output log:
+<span id="log"></span></pre>
+
+        <hr>
+
+        <a href="https://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80" target="_blank">Wikipedia</a>
+
+        <script src="methods/leibniz.js"></script>
+        <script src="public/runner.js"></script>
+        
+    </main>
+
+    <footer>
+        <div>
+            <p><a href="https://github.com/CalSch/pi">GitHub Repo</a></p>
+			<p>Made by <a href="https://github.com/CalSch">CalSch</a></p>
+		</div>
+    </footer>
+
+</body>
+</html>
